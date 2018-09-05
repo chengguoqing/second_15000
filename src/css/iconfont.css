@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "dx";
+    src: url('../assets/fonts/iconfont.ttf?t=15123er90333');
+}
+
+.dx {
+    font-family: "dx" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-star:before { content: "\e61b"; }
+
+.icon-aixin:before { content: "\e602"; }
+
+.icon-57:before { content: "\e6fa"; }
+
+.icon-down:before { content: "\e6e9"; }
+
+.icon-lingdang:before { content: "\e8c0"; }
+
+.icon-icon-test:before { content: "\e603"; }
