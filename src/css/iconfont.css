@@ -12,14 +12,33 @@
 }
 
 
+.icon-qqmw:before { content: "\e623"; }
+
+.icon-success:before { content: "\e6d0"; }
+
+.icon-iconset0143:before { content: "\e62a"; }
+
 .icon-star:before { content: "\e61b"; }
 
 .icon-aixin:before { content: "\e602"; }
 
 .icon-57:before { content: "\e6fa"; }
 
+.icon-success-filling:before { content: "\e640"; }
+
+.icon-weixin:before { content: "\e64f"; }
+
+.icon-weibo:before { content: "\e63c"; }
+
+.icon-close:before { content: "\e62b"; }
+
+.icon-zhifubao:before { content: "\e665"; }
+
+.icon-close1:before { content: "\e604"; }
+
 .icon-down:before { content: "\e6e9"; }
 
 .icon-lingdang:before { content: "\e8c0"; }
 
 .icon-icon-test:before { content: "\e603"; }
+

@@ -1024,7 +1024,10 @@ em {
 }
 
 .ls {
-    color: #0096F4  !important;
+    color: #0099F6  !important;
+}
+.sz{
+    cursor: pointer
 }
 
 .lser {

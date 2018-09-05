@@ -53,7 +53,11 @@
         line-height: 60px;
         height: 60px;
         background: #0C9FF5;
-        z-index: 1000
+        z-index: 1000;
+        overflow: hidden
+    }
+    .top_e_eert .wd1{
+          background: #0C9FF5;
     }
     .df_deert a{
         color: #fff;

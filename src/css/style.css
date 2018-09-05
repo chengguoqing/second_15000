@@ -1,0 +1,64 @@
+ .sdf_jh_deer {
+     position: fixed;
+     left: 0px;
+     top: 0px;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5)
+ }
+
+ .sdf_jh_deert {
+     width: 454px;
+     padding: 20px 20px 30px 20px;
+     margin: auto;
+ }
+
+ .msd_for_rt {
+     margin: auto;
+     width: 300px;
+     margin-top: 40px;
+ }
+
+ .f_df_ert {
+     border-top: 1px solid #606060;
+
+ }
+
+ .f_df_ert span {
+     color: #606060;
+     font-size: 12px;
+     padding: 10px;
+     position: relative;
+     top: -12px;
+     background: #fff;
+ }
+
+ .df_erjh_deer i.dx {
+     font-size: 36px;
+ }
+
+ .df_erjh_deer i.dx.icon-weixin {
+     color: #00DC21
+ }
+
+ .df_erjh_deer i.dx.icon-qqmw {
+     color: #2CADEE
+ }
+
+ .df_erjh_deer i.dx.icon-zhifubao {
+     color: #00AAEE
+ }
+
+ .df_erjh_deer i.dx.icon-weibo {
+     color: #E32428;
+ }
+.dsf_ddf_detrt{
+    font-size: 60px !important;
+}
+
+ .df_jh_deert {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        z-index: 10
+    }

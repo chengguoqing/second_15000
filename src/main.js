@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './css/base.css'
+import './css/style.css'
 import './css/iconfont.css'
 import VueResource from 'vue-resource';
 import ElementUI from 'element-ui';

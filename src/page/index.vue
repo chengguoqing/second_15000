@@ -1,7 +1,7 @@
 <template>
 	<div >
 	<top_er></top_er>
-        
+       <div class="wd1">
     <div class="wd mt20">
         
         <div class="sd_jh_der bgff">
@@ -124,7 +124,7 @@
         
     
     </div>    
-        
+        </div> 
 	</div>
 </template>
 <script>
