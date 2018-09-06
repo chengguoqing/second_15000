@@ -1,10 +1,10 @@
 <!--登录-->
 <template>
-<div class="cz_w sdf_jh_deer" >
+<div class="cz_w sdf_jh_deer"  v-if="$store.state.is_deng_box">
         <section class="cz_a">
     <section class="yj4 bgff sdf_jh_deert">
         <p class="tr">
-            <i class="dx icon-close1 z9 fz26 sz"></i>
+            <i class="dx icon-close1 z9 fz26 sz" @click="$store.state.is_deng_box=false"></i>
         </p>
       
         <section v-if="id_der==0">
@@ -13,7 +13,7 @@
         
         <section v-if="id_der==1">
     <bound></bound>
-        </section>
+        </section> 
         
                <section v-if="id_der==2">
     <forget_password></forget_password>
@@ -38,9 +38,12 @@
     import reset_passwords from "./reset_passwords"
 
     export default {
+        props: {
+            id_der: "", //0登录 1.绑定  2忘记密码 3.重置密码
+        },
         data() {
             return {
-                id_der: 3, //0登录 1.绑定  2忘记密码 3.重置密码
+               
 
             }
         },

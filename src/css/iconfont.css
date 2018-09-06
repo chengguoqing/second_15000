@@ -42,3 +42,7 @@
 
 .icon-icon-test:before { content: "\e603"; }
 
+.icon-ico_mine:before { content: "\e600"; }
+
+.icon-ico_logout:before { content: "\e601"; }
+

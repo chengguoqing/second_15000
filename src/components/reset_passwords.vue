@@ -43,7 +43,7 @@
     
        <section class="mt40 cen">
             <i class="dx icon-success-filling ls dsf_ddf_detrt"></i>
-        <p class="cen fz12 mt10 pm40">
+        <p class="cen fz12 mt10 pm40 dsf_deeer">
    密码重置成功，<br>请重新登录。
 
 

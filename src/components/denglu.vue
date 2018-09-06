@@ -4,7 +4,7 @@
         <section class="cz_a">
     <section class="yj4 bgff sdf_jh_deert">
         <p class="tr">
-            <i class="dx icon-close1 z9 fz26"></i>
+            <i class="dx icon-close1 z9 fz26" @click="$store.state.is_deng_box=false"></i>
         </p>
         <section >
         <p class="cen mt10">

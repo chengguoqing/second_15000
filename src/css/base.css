@@ -12,7 +12,6 @@
 
 body {
     background: #F3F3F3;
-
     margin: auto;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -1242,9 +1241,7 @@ a:hover {
     background: #eb2222
 }
 
-.mui-table-view .mui-media-object {
-    max-width: 640px
-}
+
 
 .mui-navigate-right:after,
 .mui-push-right:after {
@@ -1408,27 +1405,4 @@ a:hover {
 }
 .kx{
     vertical-align: bottom
-}
-@media screen and (max-width: 330px) {
-    .dsf_jgh_sdrt {
-        height: 150px;
-    }
-}
-
-@media screen and (max-width: 330px) {
-    html {
-        font-size: 12px !important;
-    }
-}
-
-@media screen and (min-width: 375px) {
-    html {
-        font-size: 16px !important;
-    }
-}
-
-@media screen and (min-width: 410px) {
-    html {
-        font-size: 18px !important;
-    }
 }

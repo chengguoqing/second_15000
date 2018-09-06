@@ -1,4 +1,8 @@
- .sdf_jh_deer {
+html{
+    
+    width: 100% !important;
+}
+.sdf_jh_deer {
      position: fixed;
      left: 0px;
      top: 0px;
@@ -9,7 +13,7 @@
 
  .sdf_jh_deert {
      width: 454px;
-     padding: 20px 20px 30px 20px;
+     padding: 10px 20px 30px 20px;
      margin: auto;
  }
 
@@ -62,3 +66,9 @@
         top: 0px;
         z-index: 10
     }
+.el-dropdown-menu.el-popper{
+    padding: 0px !important
+}
+.dsf_deeer{
+    line-height: 2 !important
+}
