@@ -19,7 +19,7 @@
     </el-col>
 </el-row>
                 
-                
+                 
                 
         </div>
             
@@ -28,15 +28,15 @@
 	</div>
 </template>
 <script>
-        import top_er from "../components/top_er"
+    import top_er from "../components/top_er"
     export default {
         data() {
             return {
-                
+
             }
         },
         components: {
-top_er
+            top_er
         },
         methods: {
 
@@ -48,17 +48,18 @@ top_er
 
 </script>
 <style>
-    .dsf_deer{
+    .dsf_deer {
         position: relative;
         z-index: 100
     }
- .dsf_deer input{
-    background:transparent !important;
+
+    .dsf_deer input {
+        background: transparent !important;
     }
-   
+
 </style>
 <style scoped>
-    .sd_jh_dfrrt{
+    .sd_jh_dfrrt {
         position: fixed;
         left: 0px;
         top: 0px;
@@ -69,21 +70,22 @@ top_er
         background-size: cover;
     }
 
-    .sd_jh_deert{
+    .sd_jh_deert {
         width: 700px;
         margin: auto;
         margin-top: 350px;
     }
-     .bg_deert{
-         background: #fff;
-filter: blur(60px);
-         position: absolute;
-         left: -30px;
-         top: -20px;
-         width: 120%;
-         height: 80px;
-         z-index: 1;
-         border-radius: 4px;
+
+    .bg_deert {
+        background: #fff;
+        filter: blur(60px);
+        position: absolute;
+        left: -30px;
+        top: -20px;
+        width: 120%;
+        height: 80px;
+        z-index: 1;
+        border-radius: 4px;
     }
-   
+
 </style>
