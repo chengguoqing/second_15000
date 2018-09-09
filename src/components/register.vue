@@ -3,23 +3,23 @@
 <div class="cz_w sdf_jh_deer"  v-if="$store.state.is_deng_box">
         <section class="cz_a">
     <section class="yj4 bgff sdf_jh_deert">
-        <p class="tr">
+        <p class="tr fg_deeerert">
             <i class="dx icon-close1 z9 fz26 sz" @click="$store.state.is_deng_box=false"></i>
         </p>
       
-        <section v-if="id_der==0">
-            <denglu></denglu>
+        <section v-if="$store.state.id_der==0">
+            <denglu ></denglu>
         </section>
         
-        <section v-if="id_der==1">
+        <section v-if="$store.state.id_der==1">
     <bound></bound>
         </section> 
         
-               <section v-if="id_der==2">
+               <section v-if="$store.state.id_der==2">
     <forget_password></forget_password>
         </section>
         
-        <section v-if="id_der==3">
+        <section v-if="$store.state.id_der==3">
     <reset_passwords></reset_passwords>
         </section>
         
@@ -38,11 +38,9 @@
     import reset_passwords from "./reset_passwords"
 
     export default {
-        props: {
-            id_der: "", //0登录 1.绑定  2忘记密码 3.重置密码
-        },
+       
         data() {
-            return {
+            return { 
                
 
             }
@@ -54,7 +52,9 @@
             reset_passwords
         },
         methods: {
-
+            wd_deert(){
+               
+            }
         },
         mounted() {
 

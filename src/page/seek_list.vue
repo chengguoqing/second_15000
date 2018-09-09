@@ -1,17 +1,17 @@
 <template>
 	<div >
-	<top_er></top_er>
+ <top_er index_d="0"></top_er>
        <div class="wd1">
     <div class="wd mt20">
         
         <div class="sd_jh_der bgff">
 
-            <el-row>
-  <el-col :span="19">
+       <el-row>
+  <el-col :span="20">
      <el-input class="w100" placeholder="请输入搜索内容"  v-model="query"></el-input>
     </el-col>
-  <el-col :span="5" class="tr">
-      <el-button type="primary" class="ssd_deer" @click="get_data">搜索</el-button>
+  <el-col :span="4" class="tr">
+      <el-button type="primary" class="ssd_deer" >搜索</el-button>
     </el-col>
 </el-row>
             
@@ -37,7 +37,7 @@
             
             
             
-            从列表选择"
+            从列表选择" 
     </div>
    
         <ul class="sd_jh_derrt">
@@ -133,7 +133,7 @@
         data() {
             return {
                 query: "center",
-                dfer_eer: ""
+                dfer_eer: "" 
             }
         },
         components: {
@@ -166,9 +166,8 @@
         box-shadow: 0 0px 4px rgba(0, 0, 0, .2);
     }
 
-    .ssd_deer {
-        padding-left: 40px;
-        padding-right: 40px;
+  .ssd_deer {
+       width: 120px;
     }
 
     .sd_dert {
@@ -177,33 +176,13 @@
         cursor: pointer
     }
 
-    .sd_jh_derrt li {
-        box-shadow: 0 0px 4px rgba(0, 0, 0, .2);
-        padding: 15px 20px;
-        background: #fff;
-        position: relative;
-    }
-
-    .fenh_sddf {
-        width: 200px;
-        height: 154px;
-    }
-
+   
+   
     .dsf_jhj_deert {
         width: 345px;
         padding-right: 10px;
     }
 
-    .dsf_kjj_dert {
-        font-size: 12px;
-        color: #666;
-        margin-top: 5px;
-    }
-
-    .dsf_kjj_dert i.ab {
-        opacity: 0.5;
-
-    }
 
     .dsd_ddda {
         width: 5px;

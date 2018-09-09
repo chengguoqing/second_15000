@@ -32,14 +32,15 @@
             
         <section class="mt20">
 <el-row>
-    <el-col :span="12" class="fz12 tl">
-  
-        没有账号?注册
-   
+    <el-col :span="12" class="fz12 tl sz" >
+  <span @click="$store.state.id_der=1">
+        没有账号?注册{{$store.state.id_derer}}
+   </span>
     </el-col>
-    <el-col :span="12" class="tr fz12">
+    <el-col :span="12" class="tr fz12 sz" >
+          <span @click="$store.state.id_der=2">
     忘记密码?
-
+    </span>
     </el-col>
 </el-row>
             

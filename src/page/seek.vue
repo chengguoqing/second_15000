@@ -1,7 +1,7 @@
 <!--搜索-->
 <template>
 	<div >
-        <top_er></top_er>
+ <top_er index_d="0"></top_er>
         <div class="sd_jh_dfrrt">
             
             <div class="sd_jh_deert cen">
@@ -15,7 +15,7 @@
       <p class="bg_deert"></p>
     </el-col>
   <el-col :span="5" class="tr pl20" >
-      <el-button type="primary" class="ssd_deer w100" >搜索</el-button>
+      <el-button type="primary" class="ssd_deer w100" @click="hf('seek_list_er')">搜索</el-button>
     </el-col>
 </el-row>
                 

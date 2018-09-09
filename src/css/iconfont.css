@@ -46,3 +46,19 @@
 
 .icon-ico_logout:before { content: "\e601"; }
 
+.icon-ico_contact_time1:before { content: "\e609"; }
+
+.icon-ico_contact_mail1:before { content: "\e60a"; }
+
+.icon-ico_contact_wechat1:before { content: "\e60b"; }
+
+.icon-ico_contact_phone1:before { content: "\e60c"; }
+
+.icon-ico_user_appoint:before { content: "\e605"; }
+
+.icon-ico_user_info:before { content: "\e606"; }
+
+.icon-ico_user_hospital:before { content: "\e607"; }
+
+.icon-ico_menu:before { content: "\e608"; }
+

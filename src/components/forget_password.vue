@@ -5,7 +5,7 @@
 </p>
             <p class="fz12  z9">用来找回您的登录密码
 </p>
-             <section class="msd_for_rt" v-if="false">
+             <section class="msd_for_rt" v-if="true">
                  <el-form :model="ruleForm" :rules="rules" ref="ruleForm"  class="demo-ruleForm">
             
             <el-form-item  prop="name">
@@ -38,9 +38,9 @@
                
     </section>
     
-    <section class="mt40 cen">
+    <section class="mt40 cen" v-if="false">
             <i class="dx icon-success-filling ls dsf_ddf_detrt"></i>
-        <p class="cen fz12 mt10 pm40">
+        <p class="cen fz12 mt10 pm40 df_deeert">
     验证邮件发送成功，<br> 请前往您的邮箱。 
 
     </p>
@@ -115,6 +115,8 @@
 
 </script>
 <style scoped>
-
+    .df_deeert{
+        line-height: 1.5
+    }
 
 </style>

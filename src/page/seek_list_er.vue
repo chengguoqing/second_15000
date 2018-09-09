@@ -1,26 +1,38 @@
 <!--搜索列表二-->
 <template>
 	<div >
-	<top_er></top_er>
+ <top_er index_d="0"></top_er>
        <div class="wd1">
     <div class="wd mt20">
         
         <div class="sd_jh_der bgff">
 
             <el-row>
-  <el-col :span="19">
+  <el-col :span="20">
      <el-input class="w100" placeholder="请输入搜索内容"  v-model="query"></el-input>
     </el-col>
-  <el-col :span="5" class="tr">
-      <el-button type="primary" class="ssd_deer" @click="get_data">搜索</el-button>
+  <el-col :span="4" class="tr">
+      <el-button type="primary" class="ssd_deer" >搜索</el-button>
     </el-col>
 </el-row>
         </div>
         
-        <div class="mt15 pm15 pl40 z9 fz12">
+        <div class="mt15 pm15 pl20 z9 fz12">
      对不起，无法找到您搜索的疾病。您可以在以
 
     </div>
+        
+        <el-row :gutter="40">
+            <el-col :span="6" v-for="sd in 4">
+            <section class="bgff yj4 sz" @click="hf('seek_xq')">
+                    <img src="../assets/img/fnegmian.png" class="w100 cz fn_ddr_eert">
+                <section class="pd pt10">
+                    <p class="fz14 z3">心脑血管</p>
+                    <p class="z9 fz12 mt5 pm10">Heart and cerebral vessels</p>
+                </section>
+            </section>
+            </el-col>
+        </el-row>
         
     </div>
     </div>
@@ -40,19 +52,10 @@
             top_er
         },
         methods: {
-            get_data(text) {
-                let th = this
-                if (!this.query) {
-                    this.query = "center"
-                }
-                this.ge_t('https://mediconnect.github.io/mock_api/hospitals/' + this.query, "", function(data) {
-                    th.dfer_eer = data
-                    console.log(data);
-                })
-            }
+         
         },
         mounted() {
-            this.get_data()
+           
         }
     }
 
@@ -66,8 +69,7 @@
     }
 
     .ssd_deer {
-        padding-left: 40px;
-        padding-right: 40px;
+       width: 120px;
     }
 
     .sd_dert {
@@ -132,6 +134,9 @@
         width: 200px;
         text-align: center;
         border-left: 1px solid #F6F6F6
+    }
+    .fn_ddr_eert{
+        height: 133px;
     }
 
 </style>

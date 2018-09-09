@@ -11,6 +11,19 @@ export default {
                
             });
         }
+        
+           Vue.prototype.hf = function (url, cu) { //路由跳转
+           
+                router.push({
+                    path: "/" + url
+                })
+          
+
+        }
+           
+           
+           
+           
 
     }
 
