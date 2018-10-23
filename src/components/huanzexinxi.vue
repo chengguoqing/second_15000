@@ -8,13 +8,16 @@
         </p>
         
             <el-table
-                      class="mt20"
+                    @row-click="idx_sd=1"      
+        class="mt20 cen"
       :data="tableData"
       style="width: 100%">
+                
       <el-table-column
         prop="name"
         label="姓名"
-        >
+                   
+        > 
       </el-table-column>
       <el-table-column
         prop="sex"
@@ -77,7 +80,7 @@
                                     
                                     
                                     
-                                    
+                                     
                                         <el-form-item label="* 性别">
 
                                        <el-radio-group v-model="ruleForm.sex" >
@@ -199,7 +202,10 @@
 
 </script>
 <style>
-  
+    .df_jh_deeer thead th .cell{
+        text-align: center
+    }
+
 </style>
 <style scoped>
     .ssd_eer_RE{
@@ -208,5 +214,5 @@
         top: 0px;
         z-index: 100
     }
-
+  
 </style>

@@ -40,24 +40,29 @@
                 <td>
                      <img src="../../assets/img/fm_sds.jpg" class="fem_eeer">
                 </td>
+                       <td>
+                     <img src="../../assets/img/fm_sds.jpg" class="fem_eeer">
+                </td>
                 </tr>
                 <tr>
                 <td>医院名称</td>
-                     <td>  <span class="fz18 ls">UPMC</span></td>
-                     <td>
-            <span class="fz18 ls">UPMC</span>
-                </td>
+                    <td>  <span class="fz18 ls">UPMC</span></td>
+                    <td> <span class="fz18 ls">UPMC</span></td>
+                     <td> <span class="fz18 ls">UPMC</span></td>
                 </tr>
                 <tr>
                 <td>专业排名</td>
                      <td>15</td>
                      <td>15</td>
+                      <td>15</td>
                 </tr>
                 <tr>
                 <td>综合排名</td>
                      <td>15</td>
                      <td>15</td>
+                        <td>15</td>
                 </tr>
+                
                 
                 
                  <tr>
@@ -66,6 +71,8 @@
                     <i class="dx icon-star ls fz16 ab" ></i></td>
                      <td><i class="dx icon-star ls fz16" v-for="sd in 4"></i>
                     <i class="dx icon-star ls fz16 ab" ></i></td>
+                            <td><i class="dx icon-star ls fz16" v-for="sd in 4"></i>
+                    <i class="dx icon-star ls fz16 ab" ></i></td>
                 </tr>
                 
                 
@@ -73,25 +80,30 @@
                 <td>预约定金</td>
                      <td class="ls">$5000</td>
                      <td class="ls">$5000</td>
+                                      <td class="ls">$5000</td>
                 </tr>
                          <tr>
                 <td>咨询全款</td>
                      <td class="ls">$5000</td>
                      <td class="ls">$5000</td>
+                                      <td class="ls">$5000</td>
                 </tr>
                 
                        <tr>
                 <td>反馈时间</td>
                      <td>2周</td>
                      <td>2周</td>
+                                    <td>2周</td>
                 </tr>
                 <tr>
                 <td>最近可预约时间</td>
                      <td>2017.09.01 - 2017.09.07</td>
                      <td>2017.09.01 - 2017.09.07</td>
+                            <td>2017.09.01 - 2017.09.07</td>
                 </tr>
                 <tr>
                 <td>地理位置</td>
+                     <td>美国东北部宾夕法尼亚州</td>
                      <td>美国东北部宾夕法尼亚州</td>
                      <td>美国东北部宾夕法尼亚州</td>
                 </tr>
@@ -105,6 +117,10 @@
                      <td cl>
                            <p class="df_deeeert">upmc是美国领先的非盈利性医疗系统，也是全美最知名的学术研究医学中心之一，成立于1886年是世界上最大的移植中心。 2005年完成心脏移植45例肺移植96例，小肠移植46例，肾移植229例，肝移植259例，胰移植46例，胰腺移植96例。
     </p></td>
+                                <td cl>
+                           <p class="df_deeeert">upmc是美国领先的非盈利性医疗系统，也是全美最知名的学术研究医学中心之一，成立于1886年是世界上最大的移植中心。 2005年完成心脏移植45例肺移植96例，小肠移植46例，肾移植229例，肝移植259例，胰移植46例，胰腺移植96例。
+    </p></td>
+                    
                 </tr>
                 
         </tbody>

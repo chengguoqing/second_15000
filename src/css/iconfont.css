@@ -11,12 +11,17 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-
 .icon-qqmw:before { content: "\e623"; }
+
+.icon-right:before { content: "\e613"; }
+
+.icon-left:before { content: "\e614"; }
 
 .icon-success:before { content: "\e6d0"; }
 
 .icon-iconset0143:before { content: "\e62a"; }
+
+.icon-down1:before { content: "\e610"; }
 
 .icon-star:before { content: "\e61b"; }
 
@@ -28,7 +33,11 @@
 
 .icon-weixin:before { content: "\e64f"; }
 
+.icon-up:before { content: "\e65a"; }
+
 .icon-weibo:before { content: "\e63c"; }
+
+.icon-gongxiangtubiaozhuangtaileicaozuolei59:before { content: "\e66c"; }
 
 .icon-close:before { content: "\e62b"; }
 
@@ -39,6 +48,8 @@
 .icon-down:before { content: "\e6e9"; }
 
 .icon-lingdang:before { content: "\e8c0"; }
+
+.icon-fanyi:before { content: "\e6ba"; }
 
 .icon-icon-test:before { content: "\e603"; }
 

@@ -10,7 +10,7 @@
             <el-col :span="16">
             <p class="fz24 ls">PingFangSC</p>
                 <p class="fz14 z6 mt5">
-            综合排名：    <i class="dx icon-star ls" v-for="sd in 4"></i><i class="dx icon-star ls ab" v-for="sd in 1"></i>
+            综合排名：  15  <i class="dx icon-star ls" v-for="sd in 4"></i><i class="dx icon-star ls ab" v-for="sd in 1"></i>
                 </p>
     </el-col>
                  <el-col :span="8" class="tr pt5">
@@ -23,8 +23,8 @@
                         <div class="ov pl20  pr fz16 z6 dsf_deer">
                             
                             
-                            地理位置：宾夕法尼亚州匹兹堡
-                            <p class="z6">医院优势：</p>
+                           <i class="dsf_jh_dfrt"></i>地理位置：宾夕法尼亚州匹兹堡
+                            <p class="z6">  <i class="dsf_jh_dfrt"></i>医院优势：</p>
                             <div class="z3 fz16">匹兹堡大学(PITT),卡内基美隆大学(CMU)与匹兹堡大学医学中心(UPMC)三个学术医疗机构成立大数据健康医疗联盟,运用大数据Big Data来改造现今健康医疗系统。例如,智能资料的使用可以帮助医院与医生快速侦测到新的潜在性爆发, 而且立即警告相关者以及相关单位采取进一步适当措施。</div>
     </div>
                     

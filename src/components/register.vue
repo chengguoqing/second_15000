@@ -11,7 +11,7 @@
             <denglu ></denglu>
         </section>
         
-        <section v-if="$store.state.id_der==1">
+        <section v-if="$store.state.id_der==1"> 
     <bound></bound>
         </section> 
         

@@ -53,55 +53,66 @@
 	</div>
 </template>
 <script>
-        import top_er from "../../components/top_er"
-      import yuyueqeren from "../../components/yuyueqeren"
-  
+    import top_er from "../../components/top_er"
+    import yuyueqeren from "../../components/yuyueqeren"
+
     export default {
         data() {
             return {
-
+                is_cfg:0
             }
         },
         components: {
-top_er,
+            top_er,
             yuyueqeren
         },
         methods: {
 
         },
         mounted() {
-
+            this.is_cfg= this.$route.query.is_cfg
         },
     }
 
 </script>
 <style scoped>
-    .df_deeert{
-        width: 400px;
+    .df_deeert {
+        width: 440px;
         border-top: 1px solid #BFE5FC;
     }
-    .sd_deerrttx{
+
+    .sd_deerrttx {
         font-size: 16px;
-        color: #0099F6;
+
         position: relative;
         bottom: 12px;
     }
-    .sd_deerrttx span{
-        padding: 5px 3px;
+
+    .sd_deerrttx span {
+        padding: 5px 6px;
         background: #fff;
         margin-right: 16px;
-        opacity: 0.5;
+        opacity: 1;
+        color: #A7DCFB
     }
-    .sd_deerrttx span.act{
-        opacity: 1
+
+    .sd_deerrttx span:last-child {
+        margin-right: 0px;
     }
-    .sd_deeert{
+
+    .sd_deerrttx span.act {
+        opacity: 1;
+        color: #0099F6;
+    }
+
+    .sd_deeert {
         display: inline-block;
         width: 16px;
         height: 16px;
         background: #0099F6;
     }
-    .sd_deeert:after{
+
+    .sd_deeert:after {
         content: " ";
         width: 8px;
         height: 8px;

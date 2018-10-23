@@ -1,11 +1,11 @@
 <template>
 	<div class="top_e_eert">
 	   <div class="wd1">
-                <span class="fz20  b cf cz">SECOND</span>
+                <span class="fz20  b cf cz sz" @click="hf('seek')" >SECOND</span>
            <div class="f_i ml40 df_deert cz">
                 <a :class="index_d==0?'act':''" @click="hf('')">合作医院</a>
                 <a :class="index_d==1?'act':''" @click="hf('jibinfl')">疾病分类</a>
-                <a :class="index_d==2?'act':''"  @click="hf('seek')" >关于我们</a>
+                <a :class="index_d==2?'act':''"  @click="" >关于我们</a>
                 <a :class="index_d==3?'act':''" @click="hf('fuwuliucheng')">服务流程</a>
                 <a :class="index_d==4?'act':''" @click="hf('lianxiwomen')">联系我们</a>
             </div>
@@ -29,7 +29,7 @@
     </p>
     </el-dropdown-item>
        <el-dropdown-item class="btm" >
-           <p @click="ois_der=1">
+           <p @click="ois_der=1;hf('seek')">
            <i class="dx icon-ico_logout ls cz"></i> 登出
                </p>
     </el-dropdown-item>
@@ -38,11 +38,12 @@
                
                
               
-            
+             
             </div>
            <div class="fr  dsf_deeet"  v-if="ois_der==1">
             <el-button type="" @click="$store.state.id_der=0;$store.state.is_deng_box=true">登录</el-button>
-                  <el-button type="primary" plain @click="$store.state.id_der=1;$store.state.is_deng_box=true"> 注册</el-button>
+            <el-button plain type="" @click="$store.state.id_der=1;$store.state.is_deng_box=true">注册</el-button>
+               
     </div>
            
         </div>

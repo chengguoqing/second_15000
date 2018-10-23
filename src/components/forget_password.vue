@@ -22,12 +22,12 @@
       <yan_img :identifyCode="identifyCode"></yan_img>
         </section>
     
-                        </el-col>
+                        </el-col> 
                      </el-row>
                      
                      
                       <el-form-item class="mt30">
-    <el-button type="primary" @click="submitForm('ruleForm')" class="w100">登录</el-button>
+    <el-button type="primary" @click="submitForm('ruleForm')" class="w100">发送验证邮件</el-button>
                     
     </el-form-item>    
                      

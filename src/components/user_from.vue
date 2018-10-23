@@ -15,7 +15,7 @@
               <el-form-item label="* 地址">
                 <el-input placeholder="请填写地址"></el-input>
             </el-form-item>
-              <el-form-item label="* 手机号">
+              <el-form-item label="* 手机号"> 
                 <el-input placeholder="请填写手机号"></el-input>
             </el-form-item>
               <el-form-item label="旧密码" class="pr">

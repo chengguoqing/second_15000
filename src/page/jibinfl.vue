@@ -15,7 +15,7 @@
                 </p>
                 <div class="mt15 btm pt15">
                      <div>
-                        <p class="fz16 ds_jH_der">别称：</p>
+                        <p class="fz16 ds_jH_der"><i class="dsf_jh_dfrt"></i> 别称：</p>
                          <div class="ov fz16">
     肝脏恶性肿瘤
                             </div>
@@ -24,7 +24,7 @@
                     
                     
                       <div class="mt10">
-                        <p class="fz16 ds_jH_der">英文名称：</p>
+                        <p class="fz16 ds_jH_der"><i class="dsf_jh_dfrt"></i>英文名称：</p>
                          <div class="ov fz16">
 liver cancer
                             </div>
@@ -32,7 +32,7 @@ liver cancer
                     </div>  
                     
                       <div class="mt10">
-                        <p class="fz16 ds_jH_der">就诊科室：</p>
+                        <p class="fz16 ds_jH_der"><i class="dsf_jh_dfrt"></i>就诊科室：</p>
                          <div class="ov fz16">
 肿瘤科、外科
                             </div>
@@ -40,7 +40,7 @@ liver cancer
                     </div>  
                     
                       <div class="mt10">
-                        <p class="fz16 ds_jH_der">多发群体：</p>
+                        <p class="fz16 ds_jH_der"><i class="dsf_jh_dfrt"></i>多发群体：</p>
                          <div class="ov fz16">
 乙型肝炎和丙型肝炎患者、病毒性肝炎
                             </div>
@@ -121,7 +121,7 @@ liver cancer
         line-height: 1
     }
     .ds_jH_der{
-        width: 80px;
+        width: 95px;
         float: left;
     }
     .dsf_deeet{

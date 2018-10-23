@@ -19,7 +19,7 @@
                     
                            <p class="cen red" v-if="tyoe_de==1">
                     <i class="dx dsfds_deerr icon-close "></i>
-                        <span class="fz24">预约成功</span>
+                        <span class="fz24">支付失败</span>
             </p>
                     
                     
@@ -56,7 +56,7 @@
 
         },
         mounted() {
-
+            this.tyoe_de=this.$route.query.ty||0
         },
     }
 

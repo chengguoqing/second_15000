@@ -9,7 +9,7 @@
        
         <section class="user_left">
            <user_left_tap :index_e="0"></user_left_tap> 
-            
+             
             
         </section>
         <section class="ov pl30 blm df_jh_deeert">

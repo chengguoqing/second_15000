@@ -2,7 +2,7 @@
 <template>
   <div class="mt20">
                         <div class="sd_jhg_dere fz16">
-                            <span class="cz">申请人/联系人</span>
+                            <span class="cz b">申请人/联系人</span>
                             <el-tooltip class="item" effect="dark" content="账号所有人即申请人、联系人" placement="top">
                                 <i class="dx icon-iconset0143 sz fz18 z9 cz"></i>
                             </el-tooltip>
@@ -50,13 +50,13 @@
                         </ul>
  
                         <p class="pl10 ls">
-                            <ins class="fz16 sz">前往编辑>></ins>
+                            <ins class="fz16 sz" @click="hf('user_index')">前往编辑>></ins>
                         </p>
                         <div class="mt15 pt20 btm">
                             <div class="d_h_deert">
                                 <el-form :model="ruleForm" class="demo-ruleForm dsf_deeert" label-width="155px" label-position="left">
 
-                                    <el-form-item label="*患者 ">
+                                    <el-form-item label="患者 " class="dsf_eerjh_deer">
                                         <el-select placeholder="请选择患者" v-model="ruleForm.huanze" >
                                             <el-option label="李大明" value="shanghai"></el-option>
                                             <el-option label="其他患者" value="beijing"></el-option>
@@ -121,11 +121,20 @@
                                     </el-form-item>
                                     
                                     
-                                       <el-form-item label="* 与申请人关系">
+                                 <el-form-item label="* 与申请人关系" class="pr">
                                         <el-select placeholder="请选择与申请人关系" v-model="ruleForm.sq_re" >
-                                            <el-option label="父母" value="shanghai"></el-option>
-                                            <el-option label="朋友" value="beijing"></el-option>
+                                             <el-option label="本人" value="addf_a"></el-option>
+                                            <el-option label="父母" value="addf_b"></el-option>
+                                            <el-option label="朋友" value="addf_c"></el-option>
+                                             <el-option label="配偶" value="addf_d"></el-option>
+                                             <el-option label="子女" value="addf_e"></el-option>
+                                             <el-option label="其他亲属" value="addf_f"></el-option>
+                                             <el-option label="朋友" value="addf_g"></el-option>
+                                             <el-option label="其他" value="addf_h"></el-option>
                                         </el-select>
+                                     <section class="z9 dsf_dfgg fz14">
+    本人，父母，子女，配偶，其他亲属，朋友，其他
+    </section>
                                     </el-form-item>
                                     
                                     
@@ -182,12 +191,29 @@ ruleForm: {
     }
 
 </script>
+<style>
+    .dsf_eerjh_deer .el-form-item__label{
+        font-weight: 600;
+        color: #333;
+            border-left: 3px solid #0099F6;
+    padding-left: 10px;
+        line-height: 1;
+        margin-top: 10px;
+    }
+</style>
 <style scoped>
     .ssd_eer_RE{
         position: absolute;
         left: -70px;
         top: 0px;
         z-index: 100
+    }
+    .dsf_dfgg{
+        position: absolute;
+        left: 540px;
+        top: 0px;
+        width: 200px;
+        line-height: 1.5
     }
 
 </style>

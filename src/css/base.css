@@ -284,7 +284,13 @@ html {
     position: relative;
     z-index: 10
 }
-
+.wd2 {
+    width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10
+}
 .mwd {
     min-width: 1100px
 }

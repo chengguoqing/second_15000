@@ -1,7 +1,7 @@
 <!--我的预约-->
 
 <template>
-	<div >
+	<div class="sd_drertxfrrty" >
 	  <top_er index_d="0"></top_er>
        <div class="wd1">
         <div class="wd mt20">
@@ -19,13 +19,14 @@
     <el-tab-pane label="进行中的预约" name="first">
             
            <el-table
-                      class="mt20"
+                      class="mt20 cen fz12 "
+                     @row-click="hf('user_yuyue')"
       :data="tableData"
       style="width: 100%">
       <el-table-column
         prop="yybh"
         label="预约编号"
-        width="60"               
+        width="55"               
                        
         >
       </el-table-column>
@@ -34,9 +35,21 @@
         label="姓名"
      >
       </el-table-column>
+               <!--        prop="yuyuesj"-->
       <el-table-column
-        prop="yuyuesj"
+
+        width="95"  
         label="预约时间">
+          
+            <template slot-scope="scope">
+                <div class="li_drrty">
+       {{scope.row.yuyuesj}}<br>
+                -<br>
+                   {{scope.row.yuyuesj}}
+            </div>
+             
+                
+</template>
       </el-table-column>
                  <el-table-column
         prop="jbzl"
@@ -53,8 +66,8 @@
       </el-table-column>
                 <el-table-column
         prop="yjfksj"
-        label="预计反馈时间"
-         width="100"  
+        label="预计反馈  时间"
+         width="82"  
                                  >
       </el-table-column>
                
@@ -63,81 +76,58 @@
         label="操作">
         <template slot-scope="scope">
                <el-button type="primary" plain class="wancdeert" @click="hf('user_yuyuezhifu')">完成支付</el-button>  
-            <el-button type="primary" plain class="wancdeert" @click="hf('user_yuyue')">补充资料</el-button>  
+            <el-button v-if="scope.$index%2==0" type="primary" plain class="wancdeert" @click.stop="hf('user_yuyue?is_cfg=2')">补充资料</el-button>  
 </template>
-      </el-table-column>
-               
+</el-table-column>
+
+</el-table>
+
+</el-tab-pane>
+<el-tab-pane label="已完成的预约" name="second">
+
+    <el-table class="mt20" :data="tableData" style="width: 100%">
+        <el-table-column prop="yybh" label="预约编号">
+        </el-table-column>
+        <el-table-column prop="name" label="姓名">
+        </el-table-column>
+        <el-table-column prop="yuyuesj" label="预约时间">
+        </el-table-column>
+        <el-table-column prop="jbzl" label="疾病种类">
+        </el-table-column>
+
+        <el-table-column prop="yuyueyy" label="预约医院">
+        </el-table-column>
+        <el-table-column prop="dqjd" label="当前进度">
+        </el-table-column>
+        <el-table-column prop="yjfksj" label="反馈时间">
+        </el-table-column>
+
+
+
+
     </el-table>
-    
-    </el-tab-pane>
-    <el-tab-pane label="已完成的预约" name="second">
-    
-     <el-table
-                      class="mt20"
-      :data="tableData"
-      style="width: 100%">
-      <el-table-column
-        prop="yybh"
-        label="预约编号"
-                
-                       
-        >
-      </el-table-column>
-      <el-table-column
-        prop="name"
-        label="姓名"
-     >
-      </el-table-column>
-      <el-table-column
-        prop="yuyuesj"
-        label="预约时间">
-      </el-table-column>
-                 <el-table-column
-        prop="jbzl"
-        label="疾病种类">
-      </el-table-column>
-               
-                <el-table-column
-        prop="yuyueyy"
-        label="预约医院">
-      </el-table-column>
-                <el-table-column
-        prop="dqjd"
-        label="当前进度">
-      </el-table-column>
-                <el-table-column
-        prop="yjfksj"
-        label="反馈时间"
-   
-                                 >
-      </el-table-column>
-               
-               
-      
-               
-    </el-table>
-        
-    </el-tab-pane>
-  </el-tabs>
-            
-            
-            
-            
-            
-        </section>
-        
-        
-        <p class="qc"> </p>
-    </div>
-    </div>
-    </div>
-        
-        
-        
-	</div>
+
+</el-tab-pane>
+</el-tabs>
+
+
+
+
+
+</section>
+
+
+<p class="qc"> </p>
+</div>
+</div>
+</div>
+
+
+
+</div>
 </template>
 <script>
-        import user_left_tap from "../../components/user_left_tap"
+    import user_left_tap from "../../components/user_left_tap"
     import top_er from "../../components/top_er"
 
     export default {
@@ -157,53 +147,53 @@
                     cls: ""
                 }],
                 tableData: [{
-                    yybh:"01",
+                    yybh: "01",
                     name: '李小明',
-                    yuyuesj: '2017.09.01 - 2017.09.07',
+                    yuyuesj: '2017.09.01',
                     jbzl: '心脑血管',
                     yuyueyy: 'UPMC',
-                    dqjd:"预约申请中",
-                    yjfksj:"2017.09.26"
-                },{
-                    yybh:"01",
+                    dqjd: "预约申请中",
+                    yjfksj: "2017.09.26"
+                }, {
+                    yybh: "01",
                     name: '李小明',
-                    yuyuesj: '2017.09.01 - 2017.09.07',
+                 yuyuesj: '2017.09.01',
                     jbzl: '心脑血管',
                     yuyueyy: 'UPMC',
-                    dqjd:"预约申请中",
-                    yjfksj:"2017.09.26"
-                },{
-                    yybh:"01",
+                    dqjd: "预约申请中",
+                    yjfksj: "2017.09.26"
+                }, {
+                    yybh: "01",
                     name: '李小明',
-                    yuyuesj: '2017.09.01 - 2017.09.07',
+                yuyuesj: '2017.09.01',
                     jbzl: '心脑血管',
                     yuyueyy: 'UPMC',
-                    dqjd:"预约申请中",
-                    yjfksj:"2017.09.26"
-                },{
-                    yybh:"01",
+                    dqjd: "预约申请中",
+                    yjfksj: "2017.09.26"
+                }, {
+                    yybh: "01",
                     name: '李小明',
-                    yuyuesj: '2017.09.01 - 2017.09.07',
+                 yuyuesj: '2017.09.01',
                     jbzl: '心脑血管',
                     yuyueyy: 'UPMC',
-                    dqjd:"预约申请中",
-                    yjfksj:"2017.09.26"
-                },{
-                    yybh:"01",
+                    dqjd: "预约申请中",
+                    yjfksj: "2017.09.26"
+                }, {
+                    yybh: "01",
                     name: '李小明',
-                    yuyuesj: '2017.09.01 - 2017.09.07',
+                   yuyuesj: '2017.09.01',
                     jbzl: '心脑血管',
                     yuyueyy: 'UPMC',
-                    dqjd:"预约申请中",
-                    yjfksj:"2017.09.26"
-                },{
-                    yybh:"01",
+                    dqjd: "预约申请中",
+                    yjfksj: "2017.09.26"
+                }, {
+                    yybh: "01",
                     name: '李小明',
-                    yuyuesj: '2017.09.01 - 2017.09.07',
+                    yuyuesj: '2017.09.01',
                     jbzl: '心脑血管',
                     yuyueyy: 'UPMC',
-                    dqjd:"预约申请中",
-                    yjfksj:"2017.09.26"
+                    dqjd: "预约申请中",
+                    yjfksj: "2017.09.26"
                 }],
                 activeName: 'first'
             }
@@ -215,15 +205,25 @@
         methods: {
 
             handleClick(tab, event) {
-                console.log(tab, event);
+            
             }
         },
         mounted() {
-window.scrollTo(0,0)
+            window.scrollTo(0, 0)
         },
     }
 
 </script>
+<style>
+    .sd_drertxfrrty .cell {
+        text-align: center;
+    }
+    .sd_drertxfrrty .el-button--primary.is-plain{
+        background: #fff !important;
+        color: #409EFF !important;
+    }
+
+</style>
 <style scoped>
     .sd_ddert {
         height: 200px;
@@ -257,9 +257,15 @@ window.scrollTo(0,0)
     .df_jh_deeert {
         min-height: 800px;
     }
-    .wancdeert{
-         padding: 5px 10px !important;
+
+    .wancdeert {
+        padding: 5px 10px !important;
         margin-top: 5px;
-        margin-left: 0px;
+        background: #fff;
+        margin-left: 0px !important;
     }
+    .li_drrty{
+        line-height: 1.1
+    }
+
 </style>

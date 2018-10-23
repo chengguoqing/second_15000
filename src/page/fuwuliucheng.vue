@@ -9,7 +9,7 @@
 
             <div class="bgff dfs_jh_drer fz20">
                 <p class=" ls">
-                    正在预约
+                    正在预约 
                     <span class="ml10 fz18">剩余时间：29:59</span>
                 </p>
                 <div class="mt15 pt15 btm">
@@ -40,7 +40,7 @@
 
 
                     <buzou_a v-if="s_index==0"></buzou_a>
-                   <yuyuejib  v-if="s_index==1"></yuyuejib>
+                   <yuyuejib  v-if="s_index==1"></yuyuejib> 
                 
                 <yuyueqeren  v-if="s_index==2"></yuyueqeren>
                 <zhufu  v-if="s_index==3"></zhufu>

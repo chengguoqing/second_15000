@@ -1,7 +1,7 @@
 <!--搜索-->
 <template>
 	<div >
- <top_er index_d="0"></top_er>
+ <top_er index_d="10"></top_er>
         <div class="sd_jh_dfrrt">
             
             <div class="sd_jh_deert cen">
@@ -15,7 +15,7 @@
       <p class="bg_deert"></p>
     </el-col>
   <el-col :span="5" class="tr pl20" >
-      <el-button type="primary" class="ssd_deer w100" @click="hf('seek_list_er')">搜索</el-button>
+      <el-button type="primary" class="ssd_deer w100" @click="hf('seek_list')">搜索</el-button>
     </el-col>
 </el-row>
                 
@@ -65,7 +65,7 @@
         top: 0px;
         width: 100%;
         height: 100%;
-        background-image: url(../assets/img/denglu_bg.jpg);
+        background-image: url('https://duxinggj-2018-1251133427.cos.ap-guangzhou.myqcloud.com/denglu_bg.jpg');
         background-position: center center;
         background-size: cover;
     }

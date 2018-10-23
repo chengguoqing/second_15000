@@ -73,7 +73,7 @@
             </el-form>
             
             <p class="cen dsf_deeer mt50">
-                    <el-button type="primary" @click="tijiao_d" >提交</el-button>
+                    <el-button type="primary" @click="is_pip_d=true" >提交</el-button>
     
     </p>
         
@@ -100,6 +100,25 @@
     </div>
     </div>
         
+        
+        <div class="cz_w sdf_jh_deer" v-if="is_pip_d">
+        <section class="cz_a">
+    <section class="yj4 bgff sdf_jh_deert">
+      <p class="tr">
+            <i class="dx icon-close1 z9 fz26 sz" @click="is_pip_d=false"></i>
+        </p>
+        <section class="mt20">
+    <i class="dx dsfds_deerr icon-success-filling ls fz80"></i>
+            <p class="fz26 ls mt30">提交成功</p>
+            <p class="z9 fz12 mt20">
+    您的留言已提交成功，我们会在24小时之内回复您的消息
+    </p>
+        </section>
+        
+    </section>
+    </section>
+    </div>
+        
 	</div>
 </template>
 
@@ -108,7 +127,7 @@
     export default {
         data() {
             return {
-
+                is_pip_d:false
             }
         },
         components: {
@@ -133,7 +152,7 @@
     .sd_kjh_deet {
         width: 360px;
         height: 560px;
-        background: url(../assets/img/image_contact.png);
+        background: url('https://duxinggj-2018-1251133427.cos.ap-guangzhou.myqcloud.com/image_contact.png');
         padding-left: 57px;
         padding-top: 90px;
     }
@@ -146,5 +165,7 @@
     .dsf_deeer button {
         width: 300px;
     }
-
+    .fz80{
+        font-size: 80px;
+    }
 </style>

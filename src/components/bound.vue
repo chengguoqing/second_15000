@@ -64,7 +64,7 @@
                      
                      
               <el-form-item class="mt30">
-    <el-button type="primary" @click="submitForm('ruleForm')" class="w100">登录</el-button>
+    <el-button type="primary" @click="submitForm('ruleForm')" class="w100">注册</el-button>
                     
     </el-form-item>        
                      
@@ -75,7 +75,7 @@
     <el-col :span="12" class="fz12 tl sz">
      <span @click="$store.state.id_der=0">
        已有账号?登录
-    </span>
+    </span> 
    
     </el-col>
     <el-col :span="12" class="tr fz12 sz">
